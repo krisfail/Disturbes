@@ -20,15 +20,9 @@ rd /s /q "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\OneSafe PC Cleane
 rd /s /q "C:\ProgramData\OneSafe PC Cleaner"
 rd /s /q "%appdata%\OneSafe PC Cleaner"
 
-cd "%appdata%"
-cd ..\
-cd ..\
-cd Desktop
-del "OneSafe PC Cleaner.lnk"
+del "%USERPROFILE%\Desktop\OneSafe PC Cleaner.lnk"
 
-cd ..\
-cd Downloads
-del "OneSafe_PC_Cleaner.exe"
+del "%USERPROFILE%\Downloads\OneSafe_PC_Cleaner.exe"
 	
 reg delete "HKEY_CURRENT_USER\SOFTWARE\OneSafe PC Cleaner" /f
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\OneSafe PC Cleaner_is1" /f
@@ -63,11 +57,9 @@ rd /s /q "%appdata%\PC Cleaner"
 cd c:\windows\system32\tasks\
 del "PC Cleaner automatic scan and notifications."
 
-cd "%appdata%\..\..\Desktop"
-del "PC Cleaner.lnk"
+del "%USERPROFILE%\Desktop\PC Cleaner.lnk"
 
-cd ..\Downloads
-del "PC_Cleaner.exe"
+del "%USERPROFILE%\Downloads\PC_Cleaner.exe"
 	
 reg delete "HKLM\SOFTWARE\WOW6432NODE\MICROSOFT\WINDOWS\CURRENTVERSION\UNINSTALL\PC CLEANER_IS1" /f
 reg delete "HKCU\SOFTWARE\PC CLEANER" /f
@@ -90,11 +82,7 @@ rd /s /q "%appdata%\pctonics.com"
 
 del "C:\Users\Public\Desktop\Driver Tonic.lnk"
 
-cd %appdata%
-cd ..\
-cd ..\
-cd Downloads
-del "drivertonic.exe"
+del "%USERPROFILE%\Downloads\drivertonic.exe"
 
 reg delete "HKEY_CURRENT_USER\SOFTWARE\pctonics.com" /f
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{4C7CA6F1-4691-449D-B574-559726CDA825}_is1" /f
