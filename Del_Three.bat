@@ -1,4 +1,6 @@
 @echo off
+openfiles > NUL 2>&1 
+if NOT %ERRORLEVEL% EQU 0 goto NotAdmin 
 echo Thank you for using Trownsoft Disturbes.
 echo Select the software you want to remove.
 echo 1.OneSafe PC Cleaner
@@ -112,5 +114,9 @@ net start PcaSvc
 ))
 
 ) )
+:NotAdmin
+echo Error. Please run as an administrator.
+goto End
 
 pause
+:End
