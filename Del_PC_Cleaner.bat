@@ -16,7 +16,7 @@ del "PC Cleaner automatic scan and notifications."
 
 del "%USERPROFILE%\Desktop\PC Cleaner.lnk"
 
-del "%USERPROFILE%\Download\PC_Cleaner.exe"
+del "%USERPROFILE%\Downloads\PC_Cleaner.exe"
 	
 reg delete "HKLM\SOFTWARE\WOW6432NODE\MICROSOFT\WINDOWS\CURRENTVERSION\UNINSTALL\PC CLEANER_IS1" /f
 reg delete "HKCU\SOFTWARE\PC CLEANER" /f
