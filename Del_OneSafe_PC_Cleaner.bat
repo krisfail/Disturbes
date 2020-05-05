@@ -12,7 +12,7 @@ rd /s /q "%appdata%\OneSafe PC Cleaner"
 
 del "%USERPROFILE%\Desktop\OneSafe PC Cleaner.lnk"
 
-del "%USERPROFILE%\Download\OneSafe_PC_Cleaner.exe"
+del "%USERPROFILE%\Downloads\OneSafe_PC_Cleaner.exe"
 	
 reg delete "HKEY_CURRENT_USER\SOFTWARE\OneSafe PC Cleaner" /f
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\OneSafe PC Cleaner_is1" /f
