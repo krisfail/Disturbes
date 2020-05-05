@@ -11,7 +11,7 @@ rd /s /q "%appdata%\pctonics.com"
 
 del "C:\Users\Public\Desktop\Driver Tonic.lnk"
 
-del "%USERPROFILE%\Download\drivertonic.exe"
+del "%USERPROFILE%\Downloads\drivertonic.exe"
 
 reg delete "HKEY_CURRENT_USER\SOFTWARE\pctonics.com" /f
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{4C7CA6F1-4691-449D-B574-559726CDA825}_is1" /f
