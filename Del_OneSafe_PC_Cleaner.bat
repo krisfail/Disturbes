@@ -3,7 +3,6 @@ taskkill /im OneSafePCCleaner.exe /t /f
 taskkill /im OSPCNotifications.exe /t /f
 
 net stop PcaSvc
-net stop PcaSvc
 
 rd /s /q "C:\Program Files (x86)\OneSafe PC Cleaner"
 rd /s /q "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\OneSafe PC Cleaner"
@@ -11,7 +10,6 @@ rd /s /q "C:\ProgramData\OneSafe PC Cleaner"
 rd /s /q "%appdata%\OneSafe PC Cleaner"
 
 del "%USERPROFILE%\Desktop\OneSafe PC Cleaner.lnk"
-
 del "%USERPROFILE%\Downloads\OneSafe_PC_Cleaner.exe"
 	
 reg delete "HKEY_CURRENT_USER\SOFTWARE\OneSafe PC Cleaner" /f
