@@ -11,21 +11,12 @@ rd /s /q "C:\ProgramData\PC Cleaner"
 rd /s /q "C:\Program Files (x86)\PC Cleaner"
 rd /s /q "%appdata%\PC Cleaner"
 
-cd c:\
-cd windows\
-cd system32\
-cd tasks\
+cd c:\windows\system32\tasks\
 del "PC Cleaner automatic scan and notifications."
 
-cd "%appdata%"
-cd ..\
-cd ..\
-cd Desktop
-del "PC Cleaner.lnk"
+del "%USERPROFILE%\Desktop\PC Cleaner.lnk"
 
-cd ..\
-cd Downloads
-del "PC_Cleaner.exe"
+del "%USERPROFILE%\Downloads\PC_Cleaner.exe"
 	
 reg delete "HKLM\SOFTWARE\WOW6432NODE\MICROSOFT\WINDOWS\CURRENTVERSION\UNINSTALL\PC CLEANER_IS1" /f
 reg delete "HKCU\SOFTWARE\PC CLEANER" /f
